@@ -19,19 +19,39 @@ export default {
         return [
             {
                 slug: 'Originals',
-                title: 'Originais do Prime',
-                items: await basicFetch(`/discover/tv?with_network=1024&language=pt-BR&api_key=${API_KEY}`),
+                title: 'Originais do Netflix',
+                items: await basicFetch(`/discover/tv?with_network=213&language=pt-BR&api_key=${API_KEY}`),
             },
             {
-                slug: 'Familia',
-                title: 'Filmes para toda a família',
-                items: await basicFetch(`/discover/movie?with_genres=family?language=pt-BR&api_key=${API_KEY}`),
+                slug: 'Recomendados',
+                title: 'Recomendados para Você',
+                items: await basicFetch(`/discover/movie?with_genres=10751?language=pt-BR&api_key=${API_KEY}`),
             },
             {
-                slug: 'Populares',
-                title: 'Filmes populares',
-                items: await basicFetch(`/trending/all/week?language=pt-BR&api_key=${API_KEY}`),
-            }
+                slug: 'action',
+                title: 'Ação',
+                items: await basicFetch(`/discover/movie?language=pt-BR&with_genres=28&api_key=${API_KEY}`),
+            },
+            {
+                slug: 'comedy',
+                title: 'Comédia',
+                items: await basicFetch(`/discover/movie?language=pt-BR&with_genres=35&api_key=${API_KEY}`),
+            },
+            {
+                slug: 'family',
+                title: 'Família',
+                items: await basicFetch(`/discover/movie?language=pt-BR&with_genres=10751&api_key=${API_KEY}`),
+            },
+            {
+                slug: 'documentary',
+                title: 'Documentários',
+                items: await basicFetch(`/discover/movie?language=pt-BR&with_genres=99&api_key=${API_KEY}`),
+            },
+            {
+                slug: 'animation',
+                title: 'Animação',
+                items: await basicFetch(`/discover/movie?language=pt-BR&with_genres=16&api_key=${API_KEY}`),
+            },
         ]
     }
 }
