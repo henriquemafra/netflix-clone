@@ -26,7 +26,7 @@ function FeaturedMovie ({item}) {
                     <div className="featured-year">{firstDate.getFullYear()}</div>
                     <div className="featured-seasons">{item.number_of_seasons} temporada{item.number_of_seasons !== 1 ? 's' : ''}</div>
                 </div>
-                <div className="featured-description">{item.overview.substring(0, 200)}{item.overview.length > 200 ? "..." : ""}</div>
+                <div className="featured-description">{item.overview.substring(0, 100)}{item.overview.length > 100 ? "..." : ""}</div>
                 <div className="featured-buttons">
                     <a href={`https://www.themoviedb.org/tv/${item.id}`} className="featured-watchButton">► Assistir</a>
                     <a href={`https://www.themoviedb.org/tv/${item.id}`} className="featured-mylistButton">+ Minha Lista</a>

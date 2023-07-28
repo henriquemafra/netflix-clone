@@ -49,11 +49,19 @@
 .featured-description {
     margin-top: 15px;
     font-size: 20px;
-    color: #999;
+    color: #c4c3c3;
     max-width: 40%;
     text-align: left;
 }
 
+/* Media screen to improve visualization of description in mobile devices. */
+@media screen and (max-width: 768px) {
+    .featured-description {
+      max-width: 100%;
+      color: #c4c3c3;
+    }
+  }
+ 
 .featured-buttons {
     margin-top: 15px;
 }
