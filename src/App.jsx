@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Tmdb from './Tmdb'
 import './App.css'
-import MovieRow from './components/MovieRow/MovieRow';
-import FeaturedMovie from './components/FeaturedMovie/FeaturedMovie';
-import Header from './components/header/Header';
-import Footer from './components/Footer/Footer';
+import MovieRow from './components/MovieRow/MovieRow.jsx';
+import FeaturedMovie from './components/FeaturedMovie/FeaturedMovie.jsx';
+import Header from './components/header/Header.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 
 
