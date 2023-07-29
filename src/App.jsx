@@ -5,6 +5,7 @@ import MovieRow from './components/MovieRow/MovieRow.jsx';
 import FeaturedMovie from './components/FeaturedMovie/FeaturedMovie.jsx';
 import Header from './components/Header/Header.jsx';
 import Footer from './components/Footer/Footer.jsx';
+import { Analytics } from '@vercel/analytics/react';
 
 
 
@@ -49,6 +50,7 @@ function App() {
   }, []);
 
   return (
+    <>
     <div className="page">
 
       <Header black={blackHeader} />
@@ -69,7 +71,12 @@ function App() {
           <img src="https://assets.wired.com/photos/w_2000/wp-content/uploads/2016/01/Netflix_LoadTime.gif" alt="Loading" />
         </div>
       }
+
+    
     </div>
+    <Analytics />
+    </>
+    
   )
 }
 
