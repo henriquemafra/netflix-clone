@@ -3,7 +3,7 @@ import Tmdb from './Tmdb'
 import './App.css'
 import MovieRow from './components/MovieRow/MovieRow.jsx';
 import FeaturedMovie from './components/FeaturedMovie/FeaturedMovie.jsx';
-import Header from './components/header/Header.jsx';
+import Header from './components/Header/Header.jsx';
 import Footer from './components/Footer/Footer.jsx';
 
 
