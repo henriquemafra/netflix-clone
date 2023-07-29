@@ -4,6 +4,7 @@ import './App.css'
 import MovieRow from './components/MovieRow/MovieRow';
 import FeaturedMovie from './components/FeaturedMovie/FeaturedMovie';
 import Header from './components/header/Header';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -33,9 +34,9 @@ function App() {
 
   useEffect(() => {
     const scrollListener = () => {
-      if(window.scrollY > 10) {
+      if (window.scrollY > 10) {
         setBlackHeader(true)
-      }  else {
+      } else {
         setBlackHeader(false)
       }
 
@@ -60,6 +61,14 @@ function App() {
           <MovieRow key={key} title={item.title} items={item.items} />
         ))}
       </section>
+
+      <Footer />
+
+      {movieList.length <= 0 &&
+        <div className='loading'>
+          <img src="https://assets.wired.com/photos/w_2000/wp-content/uploads/2016/01/Netflix_LoadTime.gif" alt="Loading" />
+        </div>
+      }
     </div>
   )
 }

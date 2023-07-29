@@ -27,5 +27,32 @@
 }
 
 .row-list {
-    width: 1000000px;
+    transition: all ease 0.8s;
+}
+
+.row-left, .row-right {
+    position: absolute;
+    width: 40px;
+    height: 225px;
+    background-color: rgba(0,0,0, 0.4);
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+}
+.row:hover .row-left,
+.row:hover .row-right {
+    opacity: 1;
+    }
+
+.row-left {
+    left: 0;
+    
+}
+.row-right {
+    right: 0;
+    
 }
