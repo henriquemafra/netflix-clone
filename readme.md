@@ -1,4 +1,4 @@
-# Netflix Clone
+## Netflix Clone
 
 Este é um projeto de aplicativo clone da Netflix desenvolvido em ReactJS, que utiliza a API do TMDb (The Movie Database) para buscar informações sobre os filmes e séries. Abaixo estão as informações sobre a API e como as solicitações são feitas para obter os dados dos filmes e categorias.
 
@@ -6,8 +6,7 @@ Este é um projeto de aplicativo clone da Netflix desenvolvido em ReactJS, que u
 
 Aqui estão duas capturas de tela do aplicativo:
 
-![Captura de Tela](screenshots/screenshot1.png)
-![Captura de Tela](screenshots/screenshot2.png)
+![Captura de Tela](https://raw.githubusercontent.com/henriquemafra/netflix-clone/main/screenshots/screenshot1.PNG)
 
 ## Preview
 Você pode visualizar uma versão deste projeto em funcionamento através deste link: [Netflix Clone](https://netflix-clone-git-main-henriquemafra.vercel.app/).
