@@ -6,7 +6,7 @@ Este é um projeto de aplicativo clone da Netflix desenvolvido em ReactJS, que u
 
 Aqui estão duas capturas de tela do aplicativo:
 
-![Captura de Tela](screenshots/screenshot1.png)
+![Captura de Tela]([screenshots/screenshot1.png])
 ![Captura de Tela](screenshots/screenshot2.png)
 
 ## Preview
